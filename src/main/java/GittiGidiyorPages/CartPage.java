@@ -21,13 +21,6 @@ public class CartPage {
         this.driver = driver;
 
     }
-   /* public void checkPriceForProduct(){
-        System.out.println(productDetailPage.Price);
-        String productPriceInCart = driver.findElement(ProductPriceInCart).getText();
-        System.out.println(productDetailPage.productPrice+" ve "+productPriceInCart);
-        Assert.assertEquals(productDetailPage.productPrice,productPriceInCart);
-
-    }*/
 
     public void increaseAndCheckQuantityProduct() throws InterruptedException {
         driver.findElement(productQuantityBox).click();

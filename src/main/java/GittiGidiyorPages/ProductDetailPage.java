@@ -22,7 +22,6 @@ public class ProductDetailPage {
     By productName = By.id("sp-title");
     By myCartButton = By.xpath("//span[@class='basket-title']");
     By goToMyCartButton = By.xpath("//a[@class='gg-ui-btn-default padding-none']");
-   // String ProductPrice = checkDetailForProduct();
 
 
     public  ProductDetailPage (WebDriver driver){
@@ -46,14 +45,6 @@ public class ProductDetailPage {
         Files.write(file, lines, StandardCharsets.UTF_8);
         System.out.println("Ürün Detayları :"+"\n"+ProductName+"\n"+ProductPrice);
    }
-
-    public void checkDetailForProduct(){
-
-        String ProductPrice = driver.findElement(productPrice).getText();
-        //System.out.println("Ürün Detayları :"+"\n"+ProductName+"\n"+ProductPrice);
-
-
-    }
 
     public CartPage goToMyCart() throws InterruptedException {
         Thread.sleep(1000);

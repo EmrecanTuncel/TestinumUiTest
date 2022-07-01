@@ -20,10 +20,9 @@ public class AddAndClearProductToCart extends BaseTest{
         ProductDetailPage productDetailPage = resultPage.goToProductDetail();
         productDetailPage.printToTxtFile();
         productDetailPage.addToCart();
-        productDetailPage.checkDetailForProduct();
+        //productDetailPage.checkDetailForProduct();
 
         CartPage cartPage = productDetailPage.goToMyCart();
-        //cartPage.checkPriceForProduct();
         cartPage.increaseAndCheckQuantityProduct();
         cartPage.deleteProductsInCart();
 
